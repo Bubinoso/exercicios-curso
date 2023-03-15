@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First steps with DOM</title>
+    <style>
+        body {
+            background-color: rgb(48, 48, 48);
+            color: rgb(255, 255, 255);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting study with <strong>DOM</strong></h1>
+    <p>Here your result</p>
+    <p>Learning how to use <strong>DOM</strong> in JS</p>
+    <div id="msg">Click on me!</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p') [0] // a contagem dos parágrafos começa do 0, ou seja o 1º parágrafo é 0, o 2º é 1, e assim vai.
+        /*
+        var d = document.getElementsbyId('msg') aparentemente meu vscode não reconhece o Id :/ mas vou deixar guardado caso eu precise
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+       var d = window.document.querySelector('div#msg')
+       d.style.color = 'blue'
+    </script>
+</body>
+</html>
