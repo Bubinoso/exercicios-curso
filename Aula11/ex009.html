@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo ou Brasa?</title>
+    <style>
+        body {
+            background-color: indigo;
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detector de nacionalidade</h1>
+    Nacionalidade:<input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+            function verificar() {
+            var nac = document.querySelector('input#nacionalidade')
+            var res = document.querySelector('div#res')
+            var pais = String(nac.value)
+            if (pais == 'Brasil')
+            {
+            res.innerHTML = `quer o tiro na mão ou no pé?` // `Você mora no ${pais}!`
+            }
+            else
+            {
+            res.innerHTML = `pra gringo é mais caro` // `Você é estrangeiro!`
+            }
+            }
+    </script>
+</body>
+</html>
