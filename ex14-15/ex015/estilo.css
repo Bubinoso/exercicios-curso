@@ -1,0 +1,45 @@
+body {
+    background: rgb(124, 124, 255);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white
+    border-box;             /*deixa com a borda */
+    border-radius: 10px;       /*arredondada*/
+    padding: 15px;
+    width: 500px; /* deixa centralizado */
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466); /* coloca sombra na box na ordem x, y, z */
+}
+
+footer {
+    color: white;
+    text-align: center; /* deixa o texto centralizado */
+    font-style: italic;
+}
+
+div {
+    text-align: center;
+}
+/* CSS para centralizar imagem e idade */
+#imagem {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+#res {
+    text-align: center;
+    margin-top: 20px;
+}
