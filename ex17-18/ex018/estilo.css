@@ -1,0 +1,25 @@
+body {
+    background: rgb(124, 124, 255);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white
+    border-box;             /*deixa com a borda arredondada*/
+    border-radius: 10px;    /*deixa com a borda arredondada*/
+    padding: 15px;
+    width: 500px; /* deixa centralizado */
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466); /* coloca sombra na box na ordem x, y, z */
+}
+
+footer {
+    color: white;
+    text-align: center; /* deixa o texto centralizado */
+    font-style: italic;
+}
